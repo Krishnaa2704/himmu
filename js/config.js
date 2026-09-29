@@ -24,7 +24,7 @@ window.SITE_CONFIG = {
     { src: "assets/photos/gallery/himmu-2.JPG", caption: "One for the memory box." },
     { src: "assets/photos/gallery/himmu-3.JPG", caption: "A little piece of today." },
     { src: "assets/photos/gallery/himmu-4.JPG", caption: "A day we will remember." },
-    { src: "assets/photos/gallery/himmu-5.JPG", caption: "One more happy frame." },
+    { src: "assets/photos/gallery/himmu-5.jpg", caption: "One more happy frame." },
     { src: "assets/photos/gallery/himmu-6.JPG", caption: "Just because this felt special." },
   ],
   wishInstruction: "udhu candle",
