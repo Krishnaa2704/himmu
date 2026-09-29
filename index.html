@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#efe7fa">
+  <meta name="description" content="A private birthday story for Himanya.">
+  <title>For Himanya ✦</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="scene-sky" id="sky" aria-hidden="true"></div>
+
+  <section class="lock-screen" id="lock-screen">
+    <div class="lock-cloud cloud-a"></div><div class="lock-cloud cloud-b"></div>
+    <div class="lock-card">
+      <div class="lock-sparkle">✦ ♡ ✦</div>
+      <p class="overline">a little birthday secret</p>
+      <h1 id="lock-name">Himanya</h1>
+      <p class="lock-copy">Enter the year to open your surprise.</p>
+      <div class="pin-dots" id="pin-dots" aria-hidden="true"></div>
+      <div class="pin-pad" id="pin-pad"></div>
+      <p class="lock-hint" id="lock-hint"></p>
+      <p class="lock-error" id="lock-error" role="alert"></p>
+    </div>
+  </section>
+
+  <div class="reveal" id="reveal" aria-hidden="true">
+    <div class="reveal-inner">
+      <span class="reveal-kicker">the door is open</span>
+      <div class="reveal-name" id="reveal-name">Himanya</div>
+      <p>✦ happy birthday ✦</p>
+    </div>
+  </div>
+
+  <main class="site" id="site" hidden>
+    <audio id="song1-audio" preload="auto" loop></audio>
+
+    <div class="audio-chip" id="audio-chip" role="button" tabindex="0" aria-label="Pause background music">
+      <span class="bars"><i></i><i></i><i></i></span>
+      <span id="audio-chip-label">our little soundtrack · playing</span>
+    </div>
+
+    <section class="page hero" data-page="hero">
+      <div class="hero-decoration flower-cluster" aria-hidden="true">✿</div>
+      <div class="hero-decoration star-cluster" aria-hidden="true">✦</div>
+      <div class="content-wide hero-layout">
+        <div class="hero-copy reveal-up">
+          <p class="overline">made with a little extra love</p>
+          <p class="hero-hi">Happy Birthday,</p>
+          <h2>Himanya</h2>
+          <div class="year-pill"><span>2026</span><b>♡</b></div>
+          <p class="hero-message">A little scrolling story filled with memories, wishes, cake and one more surprise.</p>
+          <div class="down-cue"><span>scroll through your day</span><i></i></div>
+        </div>
+        <div class="hero-art reveal-up delay-2" aria-hidden="true">
+          <div class="art-glow"></div>
+          <img src="assets/illustrations/balloons.svg" alt="">
+          <img src="assets/illustrations/present.svg" alt="" class="present-art">
+          <img class="art-love" src="assets/decor/love-spark.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="page memories" data-page="memories">
+      <div class="content-wide">
+        <div class="section-head reveal-up">
+          <p class="overline">chapter one</p>
+          <h2>Press for a memory</h2>
+          <p>One click, one little frame. Open all five and let the room fill with your memories.</p>
+        </div>
+        <div class="memory-stage reveal-up delay-1">
+          <button class="camera" id="camera" aria-label="Reveal next memory">
+            <span class="camera-halo"></span>
+            <img src="assets/illustrations/camera.svg" alt="">
+            <span class="camera-heart">♡</span>
+          </button>
+          <div class="memory-count" id="memory-count">5 memories waiting</div>
+          <div class="polaroid-grid" id="polaroid-grid"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page cake-page" data-page="cake">
+      <div class="content-wide cake-layout">
+        <div class="section-head reveal-up">
+          <p class="overline">chapter two</p>
+          <h2>Make the cake earn its moment.</h2>
+          <p id="cake-before">cake cut cheyi himanya</p>
+        </div>
+        <div class="cake-arena reveal-up delay-1" id="cake-arena">
+          <div class="cake-confetti" id="cake-confetti" aria-hidden="true"></div>
+          <div class="cake-shadow"></div>
+          <div class="cake-slice-half left" id="cake-left"><img src="assets/illustrations/cake.png" alt="Birthday cake"></div>
+          <div class="cake-slice-half right" id="cake-right"><img src="assets/illustrations/cake.png" alt=""></div>
+          <div class="cut-swipe" id="cut-swipe" aria-hidden="true"></div>
+          <div class="knife" id="knife" aria-hidden="true">🔪</div>
+          <div class="cake-heart-orbit" aria-hidden="true">♡</div>
+        </div>
+        <div class="cake-controls reveal-up delay-2">
+          <div class="swipe-meter"><span id="meter-fill"></span></div>
+          <p class="cake-hint" id="cake-hint">Drag the knife from left to right across the cake</p>
+          <button class="soft-button" id="cut-button">Tap to cut instead</button>
+          <div class="cake-success" id="cake-success" hidden>
+            <span class="success-burst">✦ ♡ ✦</span>
+            <strong id="cake-after">tineyi inka screen lone</strong>
+            <small>The cake has officially done its job. Keep scrolling ✦</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page gallery-page" data-page="gallery">
+      <div class="content-wide">
+        <div class="section-head reveal-up">
+          <p class="overline">some of your memories</p>
+          <h2>Us, in pictures</h2>
+          <p>నీ లైఫ్ లో కొన్ని ఫోటోలు జూమ్ చేసి చూడు</p>
+        </div>
+        <div class="gallery-grid reveal-up delay-1" id="gallery-grid"></div>
+      </div>
+    </section>
+
+    <section class="page wish-page" data-page="wish">
+      <div class="content-wide wish-layout">
+        <div class="section-head reveal-up">
+          <p class="overline">chapter four</p>
+          <h2>Make a wish</h2>
+          <p>Close your eyes for a second. Then...</p>
+        </div>
+        <div class="wish-ritual reveal-up delay-1">
+          <div class="wish-frame-corner top-left" aria-hidden="true"><img src="assets/decor/frame-corner.svg" alt=""></div>
+          <div class="wish-frame-corner bottom-right" aria-hidden="true"><img src="assets/decor/frame-corner.svg" alt=""></div>
+          <button class="candle" id="candle" aria-label="Blow out the candle">
+            <span class="flame-glow"></span><span class="flame"><i></i></span>
+            <span class="wick"></span><span class="wax"><b></b><b></b></span>
+          </button>
+          <div class="wish-instruction" id="wish-instruction">udhu candle</div>
+          <div class="wish-sparkles" id="wish-sparkles" aria-hidden="true"></div>
+          <div class="wish-done" id="wish-done" hidden>
+            <strong>Your wish is off to the stars ✦</strong>
+            <span>May the year ahead give you many reasons to smile.</span>
+            <button class="soft-button" id="relight">Light it again</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page note-page" data-page="note">
+      <div class="content-wide note-layout">
+        <div class="section-head reveal-up">
+          <p class="overline">chapter five</p>
+          <h2>A note for you</h2>
+          <p>Open the letter when you are ready.</p>
+        </div>
+        <button class="envelope reveal-up delay-1" id="envelope" aria-label="Open letter" aria-pressed="false">
+          <span class="envelope-back"></span>
+          <span class="envelope-rim" aria-hidden="true"></span>
+          <span class="letter-sheet"><span id="letter-text"></span><em id="letter-sign"></em></span>
+          <span class="envelope-flap"></span>
+          <span class="envelope-pocket"></span>
+          <span class="seal">✦</span>
+          <span class="envelope-heart">♡</span>
+          <img class="envelope-corner" src="assets/decor/frame-corner.svg" alt="">
+        </button>
+      </div>
+    </section>
+
+    <section class="page wishes-page" data-page="wishes">
+      <div class="content-wide">
+        <div class="section-head reveal-up">
+          <p class="overline">chapter six</p>
+          <h2>Wishes for you</h2>
+          <p>Six little cards. Turn each one over.</p>
+        </div>
+        <div class="wish-grid reveal-up delay-1" id="wish-grid"></div>
+      </div>
+    </section>
+
+    <section class="page surprise-page" data-page="surprise">
+      <div class="content-wide surprise-layout">
+        <div class="section-head reveal-up">
+          <p class="overline">last thing</p>
+          <h2>One more surprise</h2>
+          <p>still wrapping this one up — check back soon 🎁</p>
+        </div>
+        <button class="surprise-gift reveal-up delay-1" id="surprise-gift" aria-label="Open the surprise">
+          <span class="gift-glow"></span>
+          <span class="gift-heart">♡</span>
+          <img src="assets/illustrations/present.svg" alt="Open surprise gift">
+          <span class="gift-ribbon">tap me</span>
+        </button>
+        <div class="surprise-reveal" id="surprise-reveal" hidden>
+          <div class="surprise-copy">
+            <span class="overline">just for you</span>
+            <h3>Just for you, Himanya.</h3>
+            <p>I hope today feels exactly like this — soft, a little sparkly, and made just for you.</p>
+          </div>
+          <div class="video-shell"><iframe id="video-frame" title="Birthday surprise video" loading="lazy" allow="autoplay; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+          <div class="video-fallback" id="video-fallback" hidden>
+            <span>Having trouble showing it here?</span>
+            <a id="video-open-link" href="#" target="_blank" rel="noopener">Open the surprise video in Google Drive ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page final-page" data-page="final">
+      <div class="content-wide final-layout">
+        <div class="final-stars" aria-hidden="true">✦ ♡ ✿ ♡ ✦</div>
+        <p class="overline">the end, for now</p>
+        <h2>Happy Birthday,<br><em>Himanya.</em></h2>
+        <p class="final-note">Made with a little love, a lot of family, and a screen full of memories.</p>
+        <div class="final-sign">From FAMILY</div>
+        <button class="soft-button" id="replay">↺ Watch it again</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close photo">×</button>
+    <button class="lightbox-arrow prev" id="lightbox-prev" aria-label="Previous photo">‹</button>
+    <figure><img id="lightbox-img" alt=""><figcaption id="lightbox-caption"></figcaption></figure>
+    <button class="lightbox-arrow next" id="lightbox-next" aria-label="Next photo">›</button>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="js/config.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
