@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 250">
+  <ellipse cx="160" cy="234" rx="122" ry="12" fill="#4A3878" opacity="0.28"/>
+  <path d="M92 222 L228 222 L206 236 L114 236 Z" fill="#EFE6FB"/>
+  <ellipse cx="160" cy="222" rx="68" ry="8" fill="#DCCFF0"/>
+
+  <rect x="94" y="114" width="132" height="52" fill="#C9AEE6"/>
+  <ellipse cx="160" cy="114" rx="66" ry="15" fill="#DCCFF0"/>
+  <path d="M94 114 Q102 104 110 114 Q118 104 126 114 Q134 104 142 114 Q150 104 158 114 Q166 104 174 114 Q182 104 190 114 Q198 104 206 114 Q214 104 222 114 Q226 106 226 114 L226 122 L94 122 Z" fill="#F1E8FC"/>
+  <ellipse cx="160" cy="166" rx="66" ry="14" fill="#B497DB"/>
+  <g fill="#7C5CBF" opacity="0.55">
+    <circle cx="118" cy="140" r="3.4"/><circle cx="140" cy="143" r="3.4"/>
+    <circle cx="162" cy="140" r="3.4"/><circle cx="184" cy="143" r="3.4"/><circle cx="206" cy="140" r="3.4"/>
+  </g>
+
+  <rect x="36" y="166" width="248" height="58" fill="#9A7FD1"/>
+  <ellipse cx="160" cy="166" rx="124" ry="18" fill="#B497DB"/>
+  <path d="M36 166 Q54 154 72 166 Q90 154 108 166 Q126 154 144 166 Q162 154 180 166 Q198 154 216 166 Q234 154 252 166 Q268 154 284 166 L284 176 L36 176 Z" fill="#DCCFF0"/>
+  <ellipse cx="160" cy="224" rx="124" ry="18" fill="#7C5CBF"/>
+  <g fill="#5C4599" opacity="0.55">
+    <circle cx="66" cy="196" r="3.6"/><circle cx="92" cy="200" r="3.6"/><circle cx="118" cy="196" r="3.6"/>
+    <circle cx="160" cy="200" r="3.6"/>
+    <circle cx="202" cy="196" r="3.6"/><circle cx="228" cy="200" r="3.6"/><circle cx="254" cy="196" r="3.6"/>
+  </g>
+
+  <g fill="#E8C468"><circle cx="128" cy="108" r="4"/><circle cx="192" cy="108" r="4"/></g>
+  <g fill="#F6E6F9"><circle cx="110" cy="116" r="3"/><circle cx="210" cy="116" r="3"/></g>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eee7fb"/>
+      <stop offset=".5" stop-color="#dcd0f2"/>
+      <stop offset="1" stop-color="#faf7ff"/>
+    </linearGradient>
+    <radialGradient id="orb" cx="50%" cy="45%" r="55%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#bca8e7" stop-opacity=".25"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <circle cx="190" cy="160" r="110" fill="#fff" opacity=".55"/>
+  <circle cx="995" cy="200" r="150" fill="#c7b5eb" opacity=".35"/>
+  <circle cx="610" cy="400" r="300" fill="url(#orb)"/>
+  <path d="M0 720C210 560 370 820 580 670s385-80 620 70v160H0Z" fill="#c9b6eb" opacity=".45"/>
+  <path d="M0 775c195-130 372 84 579-32 211-118 392-34 621 75v82H0Z" fill="#8f79c9" opacity=".22"/>
+  <g opacity=".75">
+    <circle cx="420" cy="270" r="12" fill="#9f8bd3"/><circle cx="450" cy="240" r="9" fill="#c2b0e8"/><circle cx="470" cy="275" r="7" fill="#9f8bd3"/>
+  </g>
+  <text x="600" y="440" text-anchor="middle" fill="#5f527d" font-family="Georgia, serif" font-size="68">Your photo here</text>
+  <text x="600" y="500" text-anchor="middle" fill="#78698f" font-family="Arial, sans-serif" font-size="28" letter-spacing="4">REPLACE THIS PLACEHOLDER</text>
+</svg>

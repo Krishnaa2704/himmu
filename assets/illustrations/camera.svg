@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 130">
+  <rect x="10" y="38" width="140" height="82" rx="14" fill="#8B6FCB"/>
+  <rect x="10" y="38" width="140" height="82" rx="14" fill="url(#camShade)"/>
+  <rect x="52" y="18" width="40" height="24" rx="6" fill="#7C5CBF"/>
+  <rect x="18" y="46" width="30" height="14" rx="4" fill="#DCCFF0"/>
+  <circle cx="80" cy="80" r="34" fill="#5C4599"/>
+  <circle cx="80" cy="80" r="26" fill="#3F2F66"/>
+  <circle cx="80" cy="80" r="17" fill="#7C5CBF"/>
+  <circle cx="70" cy="70" r="5" fill="#EFE6FB" opacity="0.7"/>
+  <circle cx="128" cy="58" r="7" fill="#E8C468"/>
+  <defs>
+    <linearGradient id="camShade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.08"/>
+    </linearGradient>
+  </defs>
+</svg>

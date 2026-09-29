@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 240">
+  <defs>
+    <radialGradient id="balA" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#EFE6FB"/>
+      <stop offset="100%" stop-color="#9A7FD1"/>
+    </radialGradient>
+    <radialGradient id="balB" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#FFF3D0"/>
+      <stop offset="100%" stop-color="#E8C468"/>
+    </radialGradient>
+    <radialGradient id="balC" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#FBE9EE"/>
+      <stop offset="100%" stop-color="#E8A6BC"/>
+    </radialGradient>
+  </defs>
+  <path d="M104 150 L96 224 L88 150" stroke="#7C5CBF" stroke-width="2" fill="none" opacity="0.55"/>
+  <path d="M60 140 L70 222 L80 146" stroke="#7C5CBF" stroke-width="2" fill="none" opacity="0.55"/>
+  <path d="M126 132 L118 214 L112 140" stroke="#7C5CBF" stroke-width="2" fill="none" opacity="0.55"/>
+  <ellipse cx="65" cy="90" rx="46" ry="56" fill="url(#balC)"/>
+  <ellipse cx="120" cy="76" rx="44" ry="54" fill="url(#balB)"/>
+  <ellipse cx="95" cy="118" rx="50" ry="60" fill="url(#balA)"/>
+  <path d="M85 174 L95 186 L105 174" fill="#7C5CBF"/>
+</svg>
